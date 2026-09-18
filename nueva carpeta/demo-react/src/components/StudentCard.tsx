@@ -1,18 +1,35 @@
 import { Avatar } from './Avatar'
 import { Card } from './Card'
 
-export const StudentCard = () => {
+
+export interface Student {
+  id: number
+  nombre: string
+  apellido: string
+  carrera: string
+  matricula: string
+  edad: number
+  semestre: number
+  correo: string
+}
+
+interface StudentProps {
+  student: Student
+  onDelete?: () => void
+}
+
+export const StudentCard = ({ student, onDelete }: StudentProps) => {
   return (
     <Card
       header={
         <div className="cluster">
-          <Avatar firstName="Ana" lastName="Garcia" />
+          <Avatar firstName={student.nombre} lastName={student.apellido} />
           <div className="stack stack--tight grow">
             <div className="cluster cluster--spread">
-              <h4>Ana Garcia</h4>
+              <h4>{student.nombre} {student.apellido}</h4>
               <span className="badge badge--success">Activo</span>
             </div>
-            <p className="text-muted">Ingenieria en Sistemas</p>
+            <p className="text-muted">{student.carrera}</p>
           </div>
         </div>
       }
@@ -21,28 +38,30 @@ export const StudentCard = () => {
           <button className="btn btn--sm" type="button">
             Ver perfil
           </button>
+            {onDelete && (
           <button className="btn btn--secondary btn--sm" type="button">
             Editar
           </button>
-        </div>
+          )}
+        </div>  
       }
     >
       <dl className="meta-list">
         <div className="meta-list__row">
           <dt className="meta-list__label">Matricula</dt>
-          <dd className="meta-list__value">2024-00123</dd>
+          <dd className="meta-list__value">{student.matricula}</dd>
         </div>
         <div className="meta-list__row">
           <dt className="meta-list__label">Edad</dt>
-          <dd className="meta-list__value">21 anos</dd>
+          <dd className="meta-list__value">{student.edad} años</dd>
         </div>
         <div className="meta-list__row">
           <dt className="meta-list__label">Semestre</dt>
-          <dd className="meta-list__value">6</dd>
+          <dd className="meta-list__value">{student.semestre}</dd>
         </div>
         <div className="meta-list__row">
           <dt className="meta-list__label">Correo</dt>
-          <dd className="meta-list__value">ana.garcia@tec.mx</dd>
+          <dd className="meta-list__value">{student.correo}</dd>
         </div>
       </dl>
     </Card>
