@@ -1,4 +1,28 @@
+import { useState } from 'react'
+import { type Product, ProductCard } from '../components/ProductCards'
+
 export const ProductForm = () => {
+    const [title, setTitle] = useState('')
+const [category, setCategory] = useState('')
+const [description, setDescription] = useState('')
+const [price, setPrice] = useState(0.0)
+const [products, setProducts] = useState<Product[]>([])
+
+const handleCreateProduct = () => {
+  const newProduct: Product = {
+    id: Date.now().toString(),
+    titulo: title,
+    categoria: category,
+    descripcion: description,
+    precio: price
+  }
+  setProducts([...products, newProduct])
+  setTitle('')
+  setCategory('')
+  setDescription('')
+  setPrice(0.0)
+}
+
   return (
     <main className="page">
       <div className="container">
@@ -27,6 +51,8 @@ export const ProductForm = () => {
                   placeholder="Ej. Monitor ultrawide"
                   autoComplete="off"
                   required
+                  value={title}
+                  onChange={(e) => setTitle(e.target.value)}
                 />
               </div>
 
@@ -37,6 +63,8 @@ export const ProductForm = () => {
                   id="category"
                   name="category"
                   required
+                  value={category}
+                  onChange={(e) => setCategory(e.target.value)}
                 >
                   <option value="" disabled>
                     Selecciona una categoría
@@ -59,6 +87,8 @@ export const ProductForm = () => {
                 placeholder="Describe las características principales del producto"
                 rows={5}
                 required
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
               />
 
               <small className="form-help">
@@ -79,6 +109,12 @@ export const ProductForm = () => {
                 placeholder="0.00"
                 aria-describedby="price-help"
                 required
+                value={price}
+                onChange={(e) => {
+                  const value = e.target.value
+                  const priceConvertor = value === '' ? 0 : Number.parseFloat(value)
+                  setPrice(priceConvertor)
+                }}
               />
 
               <small id="price-help" className="form-help">
@@ -96,6 +132,13 @@ export const ProductForm = () => {
               </button>
             </footer>
           </form>
+        </section>
+        <section>
+          {
+            products.map((product) => (
+                <ProductCard key={product.id} product={product} /> )
+            )
+        }
         </section>
       </div>
     </main>
