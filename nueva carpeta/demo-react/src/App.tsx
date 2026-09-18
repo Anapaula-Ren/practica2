@@ -7,7 +7,8 @@ import './design-system.css'
 // import { students } from './data/student.tsx'
 // import { StudentCard } from './components/StudentCard.tsx'
 //import { Contador } from './components/Contador.tsx'
-import { AddProduct } from './components/AdProduct.tsx'
+//import { AddProduct } from './components/AdProduct.tsx'
+import { ProductForm } from './components/ProductForm.tsx'
  
 export const App = () => {
   return (
@@ -28,7 +29,8 @@ export const App = () => {
             ))
           } */}
          {/*<Contador/>*/}
-         <AddProduct/>
+         {/* <AddProduct/> */}
+          <ProductForm/>
         </section>
       </div>
     </main>
