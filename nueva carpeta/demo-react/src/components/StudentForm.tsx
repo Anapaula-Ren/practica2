@@ -61,6 +61,17 @@ export const StudentForm = () => {
                    />
               </div>
               <div className="form-group">
+                <label htmlFor="apellido">Apellido</label>
+                <input
+                    id="apellido"
+                    type="text"
+                    placeholder="Ej. Pérez"
+                    required
+                    value={apellido}
+                    onChange={(e) => setApellido(e.target.value)}
+                />
+                </div>
+                <div className="form-group">
                 <label htmlFor="correo">Correo</label>
                 <input 
                 id="correo" 
@@ -100,10 +111,10 @@ export const StudentForm = () => {
                     Selecciona una categoría
                   </option>
  
-                  <option value="electronics">Sistemas</option>
-                  <option value="home">Industrial</option>
-                  <option value="clothing">Civil</option>
-                  <option value="other">Mecatronica</option>
+                <option value="Sistemas">Sistemas</option>
+                <option value="Industrial">Industrial</option>
+                <option value="Civil">Civil</option>
+                <option value="Mecatrónica">Mecatrónica</option>
                 </select>
               </div>
             <div className="form-group1">

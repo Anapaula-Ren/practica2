@@ -38,10 +38,10 @@ export const StudentCard = ({ student, onDelete }: StudentProps) => {
           <button className="btn btn--sm" type="button">
             Ver perfil
           </button>
-            {onDelete && (
-          <button className="btn btn--secondary btn--sm" type="button">
-            Editar
-          </button>
+          {onDelete && (
+            <button className="btn btn--secondary btn--sm" type="button" onClick={onDelete}>
+              Eliminar
+            </button>
           )}
         </div>  
       }
