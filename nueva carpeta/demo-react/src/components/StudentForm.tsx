@@ -1,7 +1,44 @@
-import { StudentCard } from './StudentCard'
+import { StudentCard, type Student } from './StudentCard'
+import { useState } from 'react'
 
 export const StudentForm = () => {
-  return (
+  const [nombre, setNombre] = useState('')
+  const [apellido, setApellido] = useState('')
+  const [correo, setCorreo] = useState('')
+  const [matricula, setMatricula] = useState('')
+  const [carrera, setCarrera] = useState('')
+  const [semestre, setSemestre] = useState(0)
+  const [edad, setEdad] = useState(0)
+  const [students, setStudents] = useState<Student[]>([])
+  
+  const handleCreateStudent = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+
+    const newStudent: Student = {
+      id: Date.now(),
+      nombre,
+      apellido,
+      carrera,
+      matricula,
+      edad,
+      semestre,
+      correo
+    }
+
+    setStudents((current) => [...current, newStudent])
+    setNombre('')
+    setApellido('')
+    setCarrera('')
+    setMatricula('')
+    setEdad(0)
+    setSemestre(0)
+    setCorreo('')
+  }
+
+  const handleDeleteStudent = (id: number) => {
+    setStudents((current) => current.filter((student) => student.id !== id))
+  }
+    return (
     <main className="page">
       <div className="container">
         <section className="card" aria-labelledby="form-title">
@@ -27,6 +64,15 @@ export const StudentForm = () => {
               <button className="btn btn--primary" type="submit">Guardar estudiante</button>
             </footer>
           </form>
+        </section>
+         <section>
+          {students.map((student) => (
+            <StudentCard
+              key={student.id}
+              student={student}
+              onDelete={() => handleDeleteStudent(student.id)}
+            />
+          ))}
         </section>
       </div>
     </main>
