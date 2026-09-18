@@ -39,7 +39,7 @@ const handleCreateProduct = () => {
             </p>
           </header>
 
-          <form className="stack">
+          <form className="stack" onSubmit={(e) => { e.preventDefault(); handleCreateProduct(); }}>
             <div className="grid">
               <div className="form-group">
                 <label htmlFor="title">Título</label>
