@@ -1,17 +1,6 @@
 import { Avatar } from './Avatar'
 import { Card } from './Card'
-
-
-export interface Student {
-  id: number
-  nombre: string
-  apellido: string
-  carrera: string
-  matricula: string
-  edad: number
-  semestre: number
-  correo: string
-}
+import { type Student } from '../types/StudentTypes'
 
 interface StudentProps {
   student: Student

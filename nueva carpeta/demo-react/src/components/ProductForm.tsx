@@ -1,28 +1,29 @@
-import { useState } from 'react'
+
 import { type Product, ProductCard } from '../components/ProductCards'
+import { useProduct } from '../hooks/useProduct';
 
 export const ProductForm = () => {
-    const [title, setTitle] = useState('')
-const [category, setCategory] = useState('')
-const [description, setDescription] = useState('')
-const [price, setPrice] = useState(0.0)
-const [products, setProducts] = useState<Product[]>([])
+// const [title, setTitle] = useState('')
+// const [category, setCategory] = useState('')
+// const [description, setDescription] = useState('')
+// const [price, setPrice] = useState(0.0)
+// const [products, setProducts] = useState<Product[]>([])
 
-const handleCreateProduct = () => {
-  const newProduct: Product = {
-    id: Date.now().toString(),
-    titulo: title,
-    categoria: category,
-    descripcion: description,
-    precio: price
-  }
-  setProducts([...products, newProduct])
-  setTitle('')
-  setCategory('')
-  setDescription('')
-  setPrice(0.0)
-}
-
+// const handleCreateProduct = () => {
+//   const newProduct: Product = {
+//     id: Date.now().toString(),
+//     titulo: title,
+//     categoria: category,
+//     descripcion: description,
+//     precio: price
+//   }
+//   setProducts([...products, newProduct])
+//   setTitle('')
+//   setCategory('')
+//   setDescription('')
+//   setPrice(0.0)
+// }
+const {title, category, description, price, products}= useProduct()
   return (
     <main className="page">
       <div className="container">

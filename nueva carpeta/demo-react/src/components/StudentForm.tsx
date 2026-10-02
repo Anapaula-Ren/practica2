@@ -1,4 +1,6 @@
-import { StudentCard, type Student } from './StudentCard'
+import { useStudents } from '../hooks/useStudents'
+import { type NewStudent } from '../types/StudentTypes'
+import { StudentCard } from './StudentCard'
 import { useState } from 'react'
 
 export const StudentForm = () => {
@@ -9,13 +11,12 @@ export const StudentForm = () => {
   const [carrera, setCarrera] = useState('')
   const [semestre, setSemestre] = useState(0)
   const [edad, setEdad] = useState(0)
-  const [students, setStudents] = useState<Student[]>([])
+  const { students, addStudent, removeStudent } = useStudents()
   
   const handleCreateStudent = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
-    const newStudent: Student = {
-      id: Date.now(),
+    const newStudent: NewStudent = {
       nombre,
       apellido,
       carrera,
@@ -25,7 +26,7 @@ export const StudentForm = () => {
       correo
     }
 
-    setStudents((current) => [...current, newStudent])
+    addStudent(newStudent)
     setNombre('')
     setApellido('')
     setCarrera('')
@@ -35,9 +36,7 @@ export const StudentForm = () => {
     setCorreo('')
   }
 
-  const handleDeleteStudent = (id: number) => {
-    setStudents((current) => current.filter((student) => student.id !== id))
-  }
+  const handleDeleteStudent = (id: number) => removeStudent(id)
     return (
     <main className="page">
       <div className="container">
