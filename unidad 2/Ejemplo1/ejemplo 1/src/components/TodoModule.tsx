@@ -1,10 +1,14 @@
 import { TodoCard } from './TodoCard';
 import { TodoForm } from './TodoForm';
 import { useTodo} from '../hooks/useTodo';
+import { useState } from 'react';
+import { type TodoItem } from '../types/TodoItem';
 
 export const TodoModule = () => {
 
-  const { todos, addTodo, changeStatusTodo, deleteTodo} = useTodo();
+  const { todos, addTodo, changeStatusTodo, deleteTodo, editTodo} = useTodo();
+  const [editingTodo, setEditingTodo] = useState<TodoItem | null>(null);
+
   return (
     <main className="page">
       <div className="container stack">
@@ -15,8 +19,11 @@ export const TodoModule = () => {
           </p>
         </header>
 
-        <TodoForm 
+        <TodoForm
           handleAddTodo={addTodo}
+          handleEditTodo={editTodo}
+          editingTodo={editingTodo}
+          handleCancelEdit={() => setEditingTodo(null)}
         />
 
         <section className="stack" aria-labelledby="todo-list-title">
@@ -28,8 +35,14 @@ export const TodoModule = () => {
               <TodoCard 
               key={item.id}
               item={item}
-              handleDelete={()=>deleteTodo(item.id)}
-              handleStatus={()=>changeStatusTodo(item.id)}
+              handleDelete={() => {
+                deleteTodo(item.id);
+                if (editingTodo?.id === item.id) {
+                  setEditingTodo(null);
+                }
+              }}
+              handleStatus={() => changeStatusTodo(item.id)}
+              handleEdit={() => setEditingTodo(item)}
               />
               ))
             }

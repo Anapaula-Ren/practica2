@@ -1,5 +1,6 @@
 
-import {useReducer} from "react";
+import {useEffect, useReducer} from "react";
+import {type TodoItem} from "../types/TodoItem";
 
 interface TodoFormState {
   title: string;
@@ -15,14 +16,46 @@ interface TodoFormProps {
     title:string,
     description:string
   )=> void
+  handleEditTodo: (
+    id:string,
+    title:string,
+    description:string
+  )=> void
+  editingTodo: TodoItem | null
+  handleCancelEdit: ()=> void
 }
 
-export const TodoForm = ({handleAddTodo}: TodoFormProps) => {
-  const [inputValue,dispatchInputValue] = useReducer(eventInputReducer, {title: "", description: ""})
+export const TodoForm = ({handleAddTodo, handleEditTodo, editingTodo, handleCancelEdit}: TodoFormProps) => {
+  const [inputValue,dispatchInputValue] = useReducer(eventInputReducer, {
+    title: editingTodo?.title ?? "",
+    description: editingTodo?.description ?? ""
+  })
+
+  useEffect(() => {
+    dispatchInputValue({
+      title: editingTodo?.title ?? "",
+      description: editingTodo?.description ?? ""
+    });
+  }, [editingTodo]);
+
+  const saveTodo = () => {
+    if (!inputValue.title.trim()) {
+      return;
+    }
+
+    if (editingTodo) {
+      handleEditTodo(editingTodo.id, inputValue.title, inputValue.description);
+      handleCancelEdit();
+    } else {
+      handleAddTodo(inputValue.title, inputValue.description);
+      dispatchInputValue({title: "", description: ""});
+    }
+  };
+
   return (
     <section className="card stack" aria-labelledby="todo-form-title">
       <div className="card__header">
-        <h2 id="todo-form-title">Nueva tarea</h2>
+        <h2 id="todo-form-title">{editingTodo ? "Editar tarea" : "Nueva tarea"}</h2>
       </div>
 
       <div className="form-group">
@@ -48,9 +81,16 @@ export const TodoForm = ({handleAddTodo}: TodoFormProps) => {
         />
       </div>
 
-      <button type="button" onClick={() => handleAddTodo(inputValue.title, inputValue.description)}>
-        Agregar tarea
-      </button>
+      <div className="cluster">
+        <button type="button" onClick={saveTodo}>
+          {editingTodo ? "Guardar cambios" : "Agregar tarea"}
+        </button>
+        {editingTodo && (
+          <button type="button" className="btn--secondary" onClick={handleCancelEdit}>
+            Cancelar
+          </button>
+        )}
+      </div>
     </section>
   );
 }

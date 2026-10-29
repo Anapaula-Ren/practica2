@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "uIFN1vwJIxY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\anapa\\OneDrive\\Documents\\7mo semestre\\TopicosProg\\topicos_U1\\Unidad3\\29oct\\Orders.Api\\Orders.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\anapa\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.12\\microsoft.aspnetcore.openapi.10.0.12.nupkg.sha512",
+    "C:\\Users\\anapa\\.nuget\\packages\\microsoft.openapi\\2.12.0\\microsoft.openapi.2.12.0.nupkg.sha512"
+  ],
+  "logs": []
+}

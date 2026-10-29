@@ -14,6 +14,11 @@ function reducerTodo(state:TodoItem[], action:todoAction) {
         case 'DELETE': {
             return state.filter((item) => item.id !== action.id)
         }
+        case 'EDIT': {
+            return state.map(item => item.id === action.id
+                ? {...item, title: action.title, description: action.description} 
+                :item)
+            }
     default:
         return state;
     }
@@ -30,13 +35,17 @@ export const useTodo = () => {
         });
     };
 
-    const changeStatusTodo = (id: string) => () => {
+    const changeStatusTodo = (id: string) => {
         dispatch({type: 'STATUS', id});
     };
 
-    const deleteTodo = (id: string) => () => {
+    const deleteTodo = (id: string) => {
         dispatch({type: 'DELETE', id});
     };
 
-    return {todos, addTodo, changeStatusTodo, deleteTodo};
+    const editTodo = (id: string, title: string, description: string) => {
+        dispatch({type: 'EDIT', id, title, description});
+    };
+
+    return {todos, addTodo, changeStatusTodo, deleteTodo, editTodo};
 }
