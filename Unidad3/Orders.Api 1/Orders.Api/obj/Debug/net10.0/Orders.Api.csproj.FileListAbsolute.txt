@@ -34,3 +34,40 @@ c:\Programas\Topicos avanzados de programación\Orders.Api\obj\Debug\net10.0\Ord
 c:\Programas\Topicos avanzados de programación\Orders.Api\obj\Debug\net10.0\Orders.Api.genruntimeconfig.cache
 c:\Programas\Topicos avanzados de programación\Orders.Api\obj\Debug\net10.0\ref\Orders.Api.dll
 c:\Programas\Topicos avanzados de programación\Orders.Api\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\bin\Debug\net10.0\appsettings.Development.json
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\bin\Debug\net10.0\appsettings.json
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\bin\Debug\net10.0\vscode\launch.json
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\bin\Debug\net10.0\vscode\tasks.json
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\bin\Debug\net10.0\Orders.Api.staticwebassets.endpoints.json
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\bin\Debug\net10.0\Orders.Api.exe
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\bin\Debug\net10.0\Orders.Api.deps.json
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\bin\Debug\net10.0\Orders.Api.runtimeconfig.json
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\bin\Debug\net10.0\Orders.Api.dll
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\bin\Debug\net10.0\Orders.Api.pdb
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\bin\Debug\net10.0\Microsoft.OpenApi.dll
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\Orders.Api.csproj.AssemblyReference.cache
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\rpswa.dswa.cache.json
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\Orders.Api.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\Orders.Api.AssemblyInfoInputs.cache
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\Orders.Api.AssemblyInfo.cs
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\Orders.Api.csproj.CoreCompileInputs.cache
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\Orders.Api.MvcApplicationPartsAssemblyInfo.cs
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\Orders.Api.MvcApplicationPartsAssemblyInfo.cache
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\Orders.Api.sourcelink.json
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\rjimswa.dswa.cache.json
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\scopedcss\bundle\Orders.Api.styles.css
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\staticwebassets.build.json
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\staticwebassets.build.json.cache
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\staticwebassets.development.json
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\swae.build.ex.cache
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\Orders.Api.csproj.Up2Date
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\Orders.Api.dll
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\refint\Orders.Api.dll
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\Orders.Api.pdb
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\Orders.Api.genruntimeconfig.cache
+c:\Users\anapa\OneDrive\Documents\7mo semestre\TopicosProg\topicos_U1\Unidad3\Orders.Api 1\Orders.Api\obj\Debug\net10.0\ref\Orders.Api.dll

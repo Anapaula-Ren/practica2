@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\anapa\\OneDrive\\Documents\\7mo semestre\\TopicosProg\\topicos_U1\\Unidad3\\Orders.Api 1\\Orders.Api\\Orders.Api.csproj": {}
+    "C:\\Users\\anapa\\OneDrive\\Documents\\7mo semestre\\TopicosProg\\topicos_U1\\Unidad3\\Orders.Api 1\\Orders.Api\\Orders.Api.csproj": {}
   },
   "projects": {
-    "c:\\Users\\anapa\\OneDrive\\Documents\\7mo semestre\\TopicosProg\\topicos_U1\\Unidad3\\Orders.Api 1\\Orders.Api\\Orders.Api.csproj": {
+    "C:\\Users\\anapa\\OneDrive\\Documents\\7mo semestre\\TopicosProg\\topicos_U1\\Unidad3\\Orders.Api 1\\Orders.Api\\Orders.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\anapa\\OneDrive\\Documents\\7mo semestre\\TopicosProg\\topicos_U1\\Unidad3\\Orders.Api 1\\Orders.Api\\Orders.Api.csproj",
+        "projectUniqueName": "C:\\Users\\anapa\\OneDrive\\Documents\\7mo semestre\\TopicosProg\\topicos_U1\\Unidad3\\Orders.Api 1\\Orders.Api\\Orders.Api.csproj",
         "projectName": "Orders.Api",
-        "projectPath": "c:\\Users\\anapa\\OneDrive\\Documents\\7mo semestre\\TopicosProg\\topicos_U1\\Unidad3\\Orders.Api 1\\Orders.Api\\Orders.Api.csproj",
+        "projectPath": "C:\\Users\\anapa\\OneDrive\\Documents\\7mo semestre\\TopicosProg\\topicos_U1\\Unidad3\\Orders.Api 1\\Orders.Api\\Orders.Api.csproj",
         "packagesPath": "C:\\Users\\anapa\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\anapa\\OneDrive\\Documents\\7mo semestre\\TopicosProg\\topicos_U1\\Unidad3\\Orders.Api 1\\Orders.Api\\obj\\",
+        "outputPath": "C:\\Users\\anapa\\OneDrive\\Documents\\7mo semestre\\TopicosProg\\topicos_U1\\Unidad3\\Orders.Api 1\\Orders.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\anapa\\AppData\\Roaming\\NuGet\\NuGet.Config",
