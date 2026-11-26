@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, NavLink, Navigate } from 'react-router-do
 import AppointmentProvider from './context/AppointmentProvider'
 import AgendarPage from './components/AgendarPage'
 import ConsultasPage from './components/ConsultasPage'
-import './App.css'
+
 
 function App() {
   return (
